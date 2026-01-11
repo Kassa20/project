@@ -17,36 +17,60 @@
     ></script>
   </head>
   <body style="background-color: #151515">
-    <section>
-      <!-- <div class="featured-content">
-        <nav class="nav">
-          <h2>Stream</h2>
-          <ul class="nav__list">
-            <li class="nav__item" class="" i><a href="#">Home</a></li>
-            <li class="nav__item" class="" i><a href="#">Browse</a></li>
-            <li class="nav__item">
-              <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-            </li>
-          </ul>
-        </nav>
+    <div class="featured-content">
+      <nav class="nav">
+        <h2>Stream</h2>
+        <ul class="nav__list">
+          <li class="nav__item" class="" i><a href="#">Home</a></li>
+          <li class="nav__item" class="" i><a href="#">Browse</a></li>
+          <li class="nav__item">
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+          </li>
+        </ul>
+      </nav>
+      <div class="description">
+        <section class="rating">
+          <span class="callout gloss">Science Fiction</span>
+          <span class="callout gloss">2018</span>
+          <span class="callout gloss">8.7/10</span>
+        </section>
+        <section class="paragraph">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+            aspernatur, mollitia corporis dolores nam commodi quo accusantium
+            laboriosam voluptas eum. Optio, possimus sit iusto magni qui,
+            debitis sint iste, explicabo amet adipisci officiis! Harum quidem
+            eos repellat officiis culpa. Maiores cupiditate nisi placeat quos ab
+            expedita cumque consectetur eaque deleniti.
+          </p>
+        </section>
+        <section class="buttons">
+          <button class="btn btn--solid gloss">
+            <i class="fa-solid fa-play"></i> Play
+          </button>
+          <button class="btn btn--outline gloss">See More</button>
+        </section>
       </div>
-    </section> -->
+    </div>
+
     <section class="movies">
       <div class="movie-list-wrapper">
-        <h1>Featured</h1>
-        <div class="movie-list">
-          <div class="card">
-            <span class="title">The Matrix</span>
-            <span class="rating gloss"
-              ><i class="fa-solid fa-star"></i>8.5/10</span
-            >
-          </div>
-          <div class="test"></div>
-
-        </div>
+        <h2>Featured</h2>
+        <div class="movie-list" id="featured"></div>
+        <i class="fa-solid fa-chevron-right arrow gloss"></i>
+      </div>
+      <div class="movie-list-wrapper">
+        <h2>Top IMDB</h2>
+        <div class="movie-list" id="top"></div>
+        <i class="fa-solid fa-chevron-right arrow gloss"></i>
+      </div>
+      <div class="movie-list-wrapper">
+        <h2>Popular TV-Shows</h2>
+        <div class="movie-list" id="tv"></div>
         <i class="fa-solid fa-chevron-right arrow gloss"></i>
       </div>
     </section>
+    <footer></footer>
     <script src="app.js"></script>
   </body>
 </html>
