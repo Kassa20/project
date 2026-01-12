@@ -31,13 +31,14 @@ const options = {
   }
 };
 
+
+
 //Trending
 fetch('https://api.themoviedb.org/3/trending/movie/day?language=en-US', options)
   .then(res => res.json())
   .then(data => {
 
     const list = data.results;
-    console.log(list)
     list.map((item) => {
         const title = item.original_title;
         const rating = item.vote_average;
@@ -100,3 +101,8 @@ fetch('https://api.themoviedb.org/3/tv/top_rated?language=en-US&page=1', options
   .catch(err => console.error(err));
 
 
+// search
+fetch('https://api.themoviedb.org/3/search/movie?include_adult=false&language=en-US&page=1', options)
+  .then(res => res.json())
+  .then(res => console.log(res))
+  .catch(err => console.error(err));
