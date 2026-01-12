@@ -49,7 +49,7 @@ fetch('https://api.themoviedb.org/3/trending/movie/day?language=en-US', options)
         document.getElementById("featured").innerHTML += movie;
     })
 
-    arrowLogic();
+    // arrowLogic();
 
   })
   .catch(err => console.error(err));
@@ -71,7 +71,7 @@ fetch('https://api.themoviedb.org/3/movie/top_rated?language=en-US&page=1', opti
         document.getElementById("top").innerHTML += movie;
     })
         
-    arrowLogic();
+    // arrowLogic();
 
   })
   .catch(err => console.error(err));
@@ -98,6 +98,5 @@ fetch('https://api.themoviedb.org/3/tv/top_rated?language=en-US&page=1', options
 
   })
   .catch(err => console.error(err));
-
 
 

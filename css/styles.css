@@ -99,6 +99,7 @@ a:hover {
   cursor: pointer;
   font-weight: 600;
   transition: transform 0.4s ease, background 0.3s, color 0.4s;
+  border: 0;
 }
 
 .btn--outline {
@@ -110,12 +111,21 @@ a:hover {
   color: var(--color-primary);
 }
 
-.btn:hover {
-  transform: scale(1.08);
+.btn--accent {
+  background: rgb(3, 112, 221);
+  color: #e8e7e7;
 }
+
+/* .btn:hover {
+  transform: scale(1.08);
+} */
 
 .btn--solid:hover {
   background: #ffffffed;
+}
+
+.btn--accent:hover {
+  background: rgb(4, 100, 197);
 }
 
 .btn--outline:hover {
@@ -206,9 +216,9 @@ a:hover {
 /* Card */
 .card {
   background: url(../images/25.jpg);
-  height: 37rem;
-  margin-right: 30px;
-  min-width: 300px;
+  height: 35rem;
+  margin-right: 15px;
+  min-width: 250px;
   background-size: cover;
   background-position: center;
   border-radius: 5px;
@@ -223,6 +233,7 @@ a:hover {
   .title,
   .rating {
     opacity: 1;
+    transform: scale(0.999);
   }
 }
 
@@ -234,9 +245,9 @@ a:hover {
 
 .title {
   position: absolute;
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   font-weight: 600;
-  bottom: 130px;
+  bottom: 150px;
   text-align: center;
   overflow: hidden;
   width: 100%;
@@ -247,7 +258,7 @@ a:hover {
   position: absolute;
   bottom: 0;
   right: 0;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   opacity: 0;
   overflow: hidden;
   font-weight: 600;
@@ -278,7 +289,7 @@ a:hover {
 }
 
 .arrow {
-  font-size: 80px;
+  font-size: 70px;
   position: absolute;
   padding: 30px;
   top: 230px;
@@ -289,4 +300,44 @@ a:hover {
 
 .arrow:hover {
   transform: scale(1.1);
+}
+
+/* Search  */
+
+.search-section {
+  text-align: center;
+}
+
+.search-section h2 {
+  margin-bottom: 10rem;
+}
+
+.search {
+  max-width: 800px;
+  display: flex;
+  border-radius: 30px;
+  padding: 2rem;
+  margin-left: 40rem;
+
+  /* border: 1px solid gold; */
+}
+
+.search .search-input,
+.btn--accent {
+  font-size: 1.8rem;
+  border-radius: 30px;
+}
+
+.search .btn--accent {
+  padding: 0 5rem;
+}
+
+.search-input {
+  width: 100%;
+  border-radius: 8px;
+  padding: 2.5rem;
+  outline: 0;
+  flex-grow: 1;
+  margin-right: 3px;
+  color: var(--color-accent);
 }
