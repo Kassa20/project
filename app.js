@@ -107,3 +107,61 @@ const TOKEN = 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIwNTJiMDE3MzNlMjZiOGViZGFmY
 
 const input = document.querySelector(".search-input")
 const button = document.getElementById("search-button")
+const container = document.querySelector(".search-result-container")
+
+input.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+        button.click();
+    }
+})
+
+button.addEventListener("click", async () => {
+    const query = input.value.trim();
+    if(!query) return;
+
+    try {
+        const url = `https://api.themoviedb.org/3/search/movie?` + `query=${encodeURIComponent(query)}&include_adult=false&language=en-US&page=1`;
+
+        const res = await fetch(url, {
+                    method: "GET",
+                    headers: {
+                        Authorization: TOKEN,
+                        "Content-Type": "application/json",
+                     },
+        });
+
+        if(!res.ok) {
+            const text = await res.text();
+            throw new Error(`TMDB error`);
+        }
+
+        const data = await res.json();
+        renderMovies(data.results ?? []);
+
+    } catch (err) {
+        console.log(err);
+    }
+    
+});
+
+
+function renderMovies(movies) {
+  container.innerHTML = "";
+
+  movies.slice(0, 12).forEach((m) => {
+    const posterUrl = m.poster_path
+      ? `https://image.tmdb.org/t/p/w500${m.poster_path}`
+      : "images/nopicture.gif";
+
+    container.insertAdjacentHTML(
+      "beforeend",
+      `
+        <div class="search-item">
+        <img class="search-image" src="${posterUrl}" alt="" />
+        <span class="search-title gloss">${m.title}</span>
+        <span class="search-rating gloss">${m.vote_average.toFixed(1) ?? "N/A"}/10</span>
+        </div>
+      `
+    );
+  });
+}

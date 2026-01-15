@@ -324,13 +324,11 @@ a:hover {
   display: flex;
   border-radius: 30px;
   padding: 2rem;
-
-  /* border: 1px solid gold; */
 }
 
 .search .search-input,
 .btn--accent {
-  font-size: 1.8rem;
+  font-size: 1.9rem;
   border-radius: 30px;
 }
 
@@ -353,6 +351,7 @@ a:hover {
   grid-template-columns: repeat(5, 1fr);
   gap: 20px;
   padding: 5rem;
+  transition: all 0.3s ease-in-out;
 }
 
 .search-item {
