@@ -107,4 +107,3 @@ const TOKEN = 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIwNTJiMDE3MzNlMjZiOGViZGFmY
 
 const input = document.querySelector(".search-input")
 const button = document.getElementById("search-button")
-const elements = 

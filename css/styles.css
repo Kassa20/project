@@ -358,17 +358,18 @@ a:hover {
 .search-item {
   min-width: 250px;
   height: 35rem;
-  border-radius: 5px;
   align-items: center;
   justify-content: center;
   position: relative;
   transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 .search-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 5px;
 }
 
 .search-title {
