@@ -201,7 +201,7 @@ a:hover {
 
 .description p {
   padding-top: 2rem;
-  width: 50ch;
+  width: 40ch;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -406,4 +406,17 @@ a:hover {
 .search-item:hover .search-image {
   opacity: 0.7;
   transition: all 0.3s ease-in-out;
+}
+
+/* footer */
+.footer {
+    background-color: black;
+    padding: 5rem;
+    color: #b7b5b5;
+    text-align: left;
+    font-size: 1.8rem;
+}
+
+.logo {
+    height: 4rem;
 }
