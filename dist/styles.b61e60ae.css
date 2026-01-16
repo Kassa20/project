@@ -21,7 +21,7 @@ html {
 body {
   font-family: "Montserrat", sans-serif;
   line-height: 1.5;
-  font-size: 2rem;
+  font-size: 2.2rem;
   color: #fff;
   /* height: 200vh; */
   margin: 0;
@@ -92,7 +92,7 @@ a:hover {
 
 /* Buttons  */
 .btn {
-  font-size: 1.3rem;
+  font-size: 2rem;
   padding: 1rem 2.5rem;
   border-radius: 8px;
   cursor: pointer;
@@ -140,7 +140,7 @@ a:hover {
   color: #fff;
   padding: 0.5rem 1.5rem;
   border-radius: 999px;
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: 500;
   transition: border 0.3s;
 }
@@ -160,7 +160,7 @@ a:hover {
   border: 0;
   padding: 0 30px;
   background-color: transparent;
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 
 .nav__list {
@@ -182,13 +182,13 @@ a:hover {
 /* Featured Content */
 .featured-content {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #151515),
-    url(../images/23.jpg);
+    url(/23.4aaaaf70.jpg);
   height: 75vh;
   min-width: 800px;
   padding-top: 0;
   background-size: cover;
   background-position: center;
-  font-size: 15px;
+  font-size: 20px;
 }
 
 /* Description */
@@ -215,10 +215,10 @@ a:hover {
 
 /* Card */
 .card {
-  background: url(../images/24.jpg);
-  height: 28rem;
-  margin-right: 10px;
-  min-width: 210px;
+  background: url(/24.a458acac.jpg);
+  height: 35rem;
+  margin-right: 15px;
+  min-width: 250px;
   background-size: cover;
   background-position: center;
   border-radius: 5px;
@@ -228,7 +228,7 @@ a:hover {
 
 .card:hover {
   transform: scale(1.1);
-  margin: 0 20px;
+  margin: 0 30px;
 
   .title,
   .rating {
@@ -245,9 +245,9 @@ a:hover {
 
 .title {
   position: absolute;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   font-weight: 600;
-  bottom: 130px;
+  bottom: 150px;
   text-align: center;
   overflow: hidden;
   width: 100%;
@@ -258,7 +258,7 @@ a:hover {
   position: absolute;
   bottom: 0;
   right: 0;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   opacity: 0;
   overflow: hidden;
   font-weight: 600;
@@ -273,8 +273,7 @@ a:hover {
 /* Movie List */
 
 .movies {
-  padding-left: 25px;
-  padding-top: 10rem;
+  padding-left: 30px;
 }
 
 .movie-list {
@@ -284,16 +283,16 @@ a:hover {
 }
 
 .movie-list-wrapper {
-  height: 45rem;
+  height: 60rem;
   position: relative;
   overflow: hidden;
 }
 
 .arrow {
-  font-size: 60px;
+  font-size: 70px;
   position: absolute;
-  padding: 20px;
-  top: 210px;
+  padding: 30px;
+  top: 230px;
   right: 0;
   transition: all 0.3s;
   border-radius: 10px;
@@ -328,23 +327,23 @@ a:hover {
   max-width: 800px;
   display: flex;
   border-radius: 30px;
-  padding: 1.2rem;
+  padding: 2rem;
 }
 
 .search .search-input,
 .btn--accent {
-  font-size: 1.5rem;
+  font-size: 1.9rem;
   border-radius: 30px;
 }
 
 .search .btn--accent {
-  padding: 0 3rem;
+  padding: 0 5rem;
 }
 
 .search-input {
   width: 100%;
   border-radius: 8px;
-  padding: 2.2rem;
+  padding: 2.5rem;
   outline: 0;
   flex-grow: 1;
   margin-right: 3px;
@@ -354,14 +353,14 @@ a:hover {
 .search-result-container {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 12px;
-  padding: 2rem;
+  gap: 20px;
+  padding: 5rem;
   transition: all 0.3s ease-in-out;
 }
 
 .search-item {
-  min-width: 210px;
-  height: 28rem;
+  min-width: 250px;
+  height: 35rem;
   position: relative;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
@@ -376,9 +375,9 @@ a:hover {
 
 .search-title {
   position: absolute;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 600;
-  bottom: 110px;
+  bottom: 150px;
   left: 0;
   text-align: center;
   overflow: hidden;
@@ -391,7 +390,7 @@ a:hover {
   position: absolute;
   bottom: 0;
   right: 0;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   font-weight: 600;
   border-radius: 5px;
   padding: 0.5rem;
@@ -415,9 +414,11 @@ a:hover {
     padding: 5rem;
     color: #b7b5b5;
     text-align: left;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
 }
 
 .logo {
     height: 4rem;
 }
+
+/*# sourceMappingURL=/styles.b61e60ae.css.map */
